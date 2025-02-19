@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     existingUserButton.addEventListener("click", function () {
-        if (savedUsername) {
+        if (savedUsername && savedPassword) {
             alert(`Logged in as ${savedUsername}`);
         } else {
             alert("No saved user found.");
